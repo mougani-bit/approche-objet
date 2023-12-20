@@ -1,10 +1,10 @@
-package tri;
+package listes;
 
-public class Ville implements Comparable<Ville> {
+public class Ville {
     private String nom;
-    private Integer nombreHabitants;
+    private int nombreHabitants;
 
-    public Ville(String nom, Integer nombreHabitants) {
+    public Ville(String nom, int nombreHabitants) {
         super();
         this.nom = nom;
         this.nombreHabitants = nombreHabitants;
@@ -18,11 +18,11 @@ public class Ville implements Comparable<Ville> {
         this.nom = nom;
     }
 
-    public Integer getNombreHabitants() {
+    public int getNombreHabitants() {
         return nombreHabitants;
     }
 
-    public void setNombreHabitants(Integer nombreHabitants) {
+    public void setNombreHabitants(int nombreHabitants) {
         this.nombreHabitants = nombreHabitants;
     }
 
@@ -31,8 +31,4 @@ public class Ville implements Comparable<Ville> {
         return nom + "," + nombreHabitants + " hab";
     }
 
-    @Override
-    public int compareTo(Ville ville) {
-        return this.nom.compareTo(ville.getNom());
-    }
 }

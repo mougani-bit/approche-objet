@@ -7,19 +7,19 @@ package entites;
 public class AdressePostale {
 
     /** Le numéro de la rue. */
-    int numeroRue;
+    private int numeroRue;
 
     /** Le libellé de la rue. */
-    String libelleRue;
+    private String libelleRue;
 
     /** Le code postal. */
-    int codePostal;
+    private int codePostal;
 
     /** La ville. */
-    String ville;
+    private String ville;
 
     /**
-     * Constructeur de la classe AdressePostale.
+     * Constructeur de la classe AdressePostale avec tous les paramètres.
      *
      * @param numeroRue   Le numéro de la rue.
      * @param libelleRue  Le libellé de la rue.
@@ -49,7 +49,7 @@ public class AdressePostale {
      * @param args Les arguments de la ligne de commande (non utilisés ici).
      */
     public static void main(String[] args) {
-        // Utilisation du constructeur pour créer une instance
+        // Utilisation du nouveau constructeur pour créer une instance
         AdressePostale adr1 = new AdressePostale(36, "Rambla des calissons", 34070, "Montpellier");
 
         // Affichage de l'adresse postale

@@ -3,10 +3,13 @@ package listes;
 import java.util.ArrayList;
 
 public class CreationListe {
+
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();
-        list.add(100);
-        System.out.println(list.get(0));
-        // Créer et
+        ArrayList<Integer> liste = new ArrayList<>();
+        for (int i = 1; i <= 100; i++) {
+            liste.add(i);
+        }
+        System.out.println(liste.size());
     }
+
 }

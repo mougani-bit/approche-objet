@@ -11,12 +11,10 @@ public class TestAdressePostale {
      * @param args Les arguments de la ligne de commande (non utilisés ici).
      */
     public static void main(String[] args) {
-        // Création de deux instances d'AdressePostale
+        // Utilisation du nouveau constructeur pour créer une instance
         AdressePostale adr1 = new AdressePostale(36, "Rambla des calissons", 34070, "Montpellier");
-        AdressePostale adr2 = new AdressePostale(22, "Avenue des Oliviers", 13000, "Marseille");
 
-        // Affichage des adresses postales
-        System.out.println("Adresse 1 : " + adr1);
-        System.out.println("Adresse 2 : " + adr2);
+        // Affichage de l'adresse postale
+        System.out.println(adr1);
     }
 }

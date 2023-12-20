@@ -1,10 +1,10 @@
 package tri;
 
-public class Ville implements Comparable<Ville> {
+public class Ville2 implements Comparable<Ville2> {
     private String nom;
     private Integer nombreHabitants;
 
-    public Ville(String nom, Integer nombreHabitants) {
+    public Ville2(String nom, Integer nombreHabitants) {
         super();
         this.nom = nom;
         this.nombreHabitants = nombreHabitants;
@@ -32,7 +32,8 @@ public class Ville implements Comparable<Ville> {
     }
 
     @Override
-    public int compareTo(Ville ville) {
-        return this.nom.compareTo(ville.getNom());
+    public int compareTo(Ville2 ville2) {
+        return this.getNombreHabitants().compareTo(ville2.getNombreHabitants());
     }
+
 }
